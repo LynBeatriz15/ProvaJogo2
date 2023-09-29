@@ -8,8 +8,8 @@
     </head>
     <body>
         <div class="container">
-            <h1>Remover jogo</h1>
-            <p>Tem certeza que deseja remover a jogo "${jogo.nome}" ?</p>
+            <h1>Remover Platatforma</h1>
+            <p>Tem certeza que deseja remover a jogo "${jogo.titulo}" ?</p>
             <form action="/jogo/delete" method="post">
                 <input type="hidden" name="id" value="${jogo.id}" />
                 <br />
