@@ -8,29 +8,22 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "platatformas")
-public class Plataforma {
+public class Jogo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nome;
-    private String fornecedor;
+    private String titulo;
 
+    public String getTitulo() {
+        return titulo;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
     public int getId() {
         return id;
     }
     public void setId(int id) {
         this.id = id;
-    }
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public String getFornecedor() {
-        return fornecedor;
-    }
-    public void setFornecedor(String fornecedor) {
-        this.fornecedor = fornecedor;
     }
 }
